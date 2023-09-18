@@ -114,60 +114,6 @@ function Showmetadata(sampleID){
     }));
 }
 
-// Function that builds the Gauge Chart
-
-//function gaugechart(sampleID){
-    //console.log(`gaugechart (${sampleID})`);
-
-    //d3.json(url).then((data) => {
-       // let metadata = data.metadata;
-        //let result = metadata.filter(sr => sr.id == sampleID)[0];
-       // let washFrequency = Object.values(result)[6];
-
-        // set up the gauge chart
-
-       // let gaugeChart ={
-           // domain: {x:[0,1], y:[0,1]},
-          //  value: washFrequency,
-          //  title:{
-              //  text: "<b>Belly Button Cleaning Frequency</b><br>(number of times per week)",
-               // font :{color: "black, size:16"}
-            //},
-          //  type: "indicator",
-          //  mode: "gauge+number",
-         //   gauge: {
-           //     axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2},
-               // bar: {color: "steelblue"},
-              //  steps: [
-                  //  {range: [0, 1], color: "white"},
-                   // {range: [1, 2], color: "whitesmoke"},
-                  //  {range: [2, 3], color: "white"},
-                   // {range: [3, 4], color: "whitesmoke"},
-                  //  {range: [4, 5], color: "white"},
-                  //  {range: [5, 6], color: "whitesmoke"},
-                  //  {range: [6, 7], color: "white"},
-                  //  {range: [7, 8], color: "whitesmoke"},
-                   // {range: [8, 9], color: "white"},
-                  //  {range: [9, 10], color: "whitesmoke"},
-                //]
-           // }
-       // };
-
-        // Set up the layout
-
-        //let layout ={
-           // width :400,
-           // height : 400,
-          //  margin: {t:0,b:0}
-       // };
-
-        // Call Plotly to plot the chart
-
-       // Plotly.newPlot("gauge",[gaugeChart],layout);
-
-  //  });
-//};
-
 // Function that updates the dashboard
 
 function buildGaugeChart(sampleID) {
