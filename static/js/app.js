@@ -114,20 +114,15 @@ function Showmetadata(sampleID){
     }));
 }
 
-// Function that updates the dashboard
+// Function that builds Gauge Chart
 
 function buildGaugeChart(sampleID) {
     console.log("sample", sampleID);
   
     d3.json(url).then(data =>{
   
-      var objs = data.metadata;
-      //console.log("objs", objs);
-  
-      var matchedSampleObj = objs.filter(sampleData => 
-        sampleData["id"] === parseInt(sampleID));
-      //console.log("buildGaugeChart matchedSampleObj", matchedSampleObj);
-  
+      let objs = data.metadata;
+      let matchedSampleObj = objs.filter(sampleData => sampleData["id"] === parseInt(sampleID));
       gaugeChart(matchedSampleObj[0]);
    });   
   }
@@ -201,6 +196,8 @@ function gaugeChart(data) {
     Plotly.newPlot('gauge', trace, layout, {responsive: true});
   
   }
+
+// Function that updates the dashboard
 
 function optionChanged(sampleID){
     console.log(`optionChanged, new values: ${sampleID}`);
